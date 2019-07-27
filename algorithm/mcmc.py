@@ -70,7 +70,7 @@ class sampler():
         G = np.array(generate_gp_sample(se_kernel(Sj,Sj,self.s_f,self.l),Sj))
 
         # sigmoid transform
-        G_sigmoid = self.trans_sigmoid(G).T
+        G_sigmoid = self.sigmoid(G).T
         #print("G_sigmoid's shape: ", G_sigmoid.shape)
         events = []
         gp_events = []

@@ -3,9 +3,7 @@ from numpy.random import poisson
 import scipy
 from scipy.stats import poisson
 import matplotlib.pyplot as plt
-from gp_prior import *
 from gp import *
-from es import *
 from scipy.stats import bernoulli
 import random
 import math
@@ -14,7 +12,6 @@ from Elliptical_Slice import *
 a = 0.
 b = 50.
 s = b-a
-#k = np.linspace(a,b,75)
 k = np.linspace(a,b,20)
 #theta = [1,18,0.002]
 theta = [0.5,19,0.002]

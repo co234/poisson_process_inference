@@ -3,9 +3,8 @@ from numpy.random import poisson
 import scipy
 from scipy.stats import poisson
 import matplotlib.pyplot as plt
-from gp_prior import *
+from mcmc import sampler
 from gp import *
-from es import *
 from scipy.stats import bernoulli
 import random
 import math
